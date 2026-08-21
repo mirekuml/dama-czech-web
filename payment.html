@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Membership Payment — DAMA Czech Republic</title>
+<link rel="icon" href="./favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #2B5EA7;
+    --cream: #EDE8E2;
+    --teal: #3ECCC2;
+    --text: #2C3E50;
+    --text-light: #6B7B8D;
+    --white: #FFFFFF;
+    --radius: 12px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Raleway', -apple-system, sans-serif; color: var(--text); background: var(--cream); line-height: 1.7; font-size: 16px; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 48px 24px; }
+  .logo img { height: 56px; object-fit: contain; }
+  h1 { color: var(--blue); font-size: 1.8rem; font-weight: 700; margin: 24px 0 8px; text-align: center; }
+  .desc { color: var(--text-light); font-size: 15px; max-width: 540px; text-align: center; margin-bottom: 40px; }
+  .payment-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 960px; width: 100%; }
+  .payment-card { background: var(--white); border-radius: var(--radius); padding: 32px 28px; border: 1px solid rgba(43,94,167,0.08); text-align: center; transition: all 0.3s; display: flex; flex-direction: column; gap: 12px; }
+  .payment-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.06); }
+  .payment-label { font-size: 1.1rem; font-weight: 600; color: var(--blue); }
+  .payment-price { font-size: 14px; color: var(--text-light); margin-bottom: 8px; flex-grow: 1; }
+  .btn { display: inline-block; background: var(--blue); color: #fff; text-decoration: none; font-weight: 600; font-size: 14px; padding: 12px 24px; border-radius: 50px; transition: all 0.3s; }
+  .btn:hover { opacity: 0.9; transform: translateY(-1px); }
+  .note { margin-top: 32px; font-size: 13px; color: var(--text-light); text-align: center; }
+  .note a { color: var(--blue); }
+  .back { margin-top: 16px; font-size: 13px; }
+  .back a { color: var(--blue); text-decoration: none; font-weight: 600; }
+  @media (max-width: 768px) { .payment-grid { grid-template-columns: 1fr; max-width: 360px; } }
+</style>
+</head>
+<body>
+  <div class="logo"><a href="./index.html"><img src="./dama-czech-logo.png" alt="DAMA Czech Republic" onerror="this.style.display='none'"></a></div>
+  <h1>Membership Payment</h1>
+  <p class="desc">Pay your DAMA Czech Republic membership fee securely online by card. Choose your membership type below — payment is processed by Stripe and opens in a new tab.</p>
+  <div class="payment-grid">
+      <div class="payment-card">
+        <div class="payment-label">Individual Membership</div>
+        <div class="payment-price">1,500 CZK / year</div>
+        <a href="https://buy.stripe.com/9AQeWiaW8bMma3ufYY" target="_blank" rel="noopener" class="btn">Pay Online</a>
+      </div>
+      <div class="payment-card">
+        <div class="payment-label">Corporate Membership</div>
+        <div class="payment-price">6,000 CZK / year — up to 5 members</div>
+        <a href="https://buy.stripe.com/dR63dA5BOcQq4JaaEF" target="_blank" rel="noopener" class="btn">Pay Online</a>
+      </div>
+      <div class="payment-card">
+        <div class="payment-label">Corporate Membership</div>
+        <div class="payment-price">12,000 CZK / year — 6–10 members</div>
+        <a href="https://buy.stripe.com/14kbK64xK2bM1wY146" target="_blank" rel="noopener" class="btn">Pay Online</a>
+      </div>
+  </div>
+  <p class="note">Prefer a bank transfer or need an invoice? Contact us at <a href="mailto:info@dama-czech.cz">info@dama-czech.cz</a></p>
+  <p class="back"><a href="./index.html">&larr; Back to dama-czech.cz</a></p>
+
+</body>
+</html>
